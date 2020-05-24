@@ -1,0 +1,39 @@
+query Product($id: ID!) {
+    producto(id: $id) {
+        id
+        nombre
+        descripcion
+        trailer {
+            hash
+            ext
+            size
+        }
+        precios {
+            precio
+            rebaja
+        }
+        critica {
+            contenido
+        }
+        categoria {
+            id
+        }
+        post {
+            hash
+            ext
+            size
+        }
+        links {
+            titulo
+            url
+        }
+        tipo{
+            id
+        }
+        general{
+            orden
+            visible
+        }
+
+    }
+}

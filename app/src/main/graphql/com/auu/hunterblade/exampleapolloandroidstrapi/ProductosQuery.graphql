@@ -1,0 +1,34 @@
+query Productos($where: JSON!){
+    productos (where: $where){
+        id
+        nombre
+        descripcion
+        trailer {
+          hash
+          ext
+          size
+        }
+        precios {
+          precio
+          rebaja
+        }
+        critica {
+          contenido
+        }
+        post {
+          hash
+          id
+          ext
+          size
+        }
+        links {
+          titulo
+          url
+        }
+        general{
+          orden
+          visible
+        }
+
+    }
+}
